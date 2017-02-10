@@ -1,0 +1,1173 @@
+﻿/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+
+html {
+    font-family: sans-serif; /* 1 */
+    line-height: 1.15; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+    display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+    display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+    display: none;
+}
+
+@font-face {
+    font-family: "Wisdom Script"; /* Имя шрифта */
+    src: url(font/WisdomScript.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "Montserrat-Regular"; /* Имя шрифта */
+    src: url(font/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "Montserrat-Bold"; /* Имя шрифта */
+    src: url(font/Montserrat-Bold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "DroidSerif-italic"; /* Имя шрифта */
+    src: url(font/DroidSerif-italic.ttf) format("truetype"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: "RobotoSlab-Regular"; /* Имя шрифта */
+    src: url(font/RobotoSlab-Regular.ttf) format("truetype"); /* Путь к файлу со шрифтом */
+}
+.floatRight {
+    float: right;
+}
+.floatLeft {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+.innerHeader,
+.innerServices,
+.innerPotfolio,
+.innerInfo,
+.innerTeam,
+.innerLogos,
+.innerContact,
+.innerFooter
+{
+    width: 940px;
+    margin: 0 auto;
+}
+nav, .mainServices, .mainPortfolio, .rightColumn, .mainTeam {
+    overflow: hidden;
+}
+header {
+    background-image: url("img/bgHeader.png");
+    width: 100%;
+    height: 697px;
+}
+.innerHeader {
+    padding-top: 42px;
+}
+.contact {
+    background-image: url("img/bgContact.png");
+    width: 100%;
+    height: auto;
+}
+.logo {
+    font: 26px "Wisdom Script";
+    line-height: 41px;
+    color: #fed136;
+}
+nav {
+    font: 14px "Montserrat-Regular";
+    line-height: 41px;
+}
+nav a {
+    color: #fff;
+    padding: 0 20px;
+}
+.innerHeader p {
+    text-align: center;
+    margin-top: 185px;
+    font: 40px "DroidSerif-italic";
+    color: #fff;
+}
+h1 {
+    font: 75px "Montserrat-Bold";
+    text-align: center;
+    color: #fff;
+}
+.tellMeMore {
+    text-align:center;
+    margin-top: 55px;
+}
+.tellMeMore a {
+    background-color: #fed136;
+    border-color: #fed136;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font: 18px "Montserrat-Bold";
+    color: #ffffff;
+}
+h2 {
+    font: 40px "Montserrat-Bold";
+    line-height: 75px;
+}
+.servicesTitle,
+.portfolioTitle,
+.infoTitle,
+.teamTitle,
+.contactTitle {
+    text-align: center;
+}
+.servicesTitle p,
+.portfolioTitle p,
+.infoTitle p,
+.teamTitle p,
+.contactTitle p {
+    font: 16px "DroidSerif-italic";
+}
+.contactTitle {
+    color: #fff;
+}
+.portfolio {
+    background-image: url("img/bgPortfolio.png");
+}
+
+.mainServices div {
+    width: 290px;
+    text-align: center;
+}
+.mainServices>div{
+    padding: 0 1%;
+}
+.mainServices h3, .mainPotfolio h3, .mainInfo h3, .mainTeam h3 {
+    font: 1.125em "Montserrat-Bold";
+}
+.mainServices p, .mainInfo p, .mainTeam p, .description {
+    font: 14px "RobotoSlab-Regular";
+    color: #777;
+}
+.mainServices img {
+    width: 72px;
+    height: 72px;
+}
+
+.innerPotfolio img {
+    width: auto;
+    height: auto;
+}
+.mainPortfolio {
+    text-align: center;
+    height: auto;
+}
+.mainPotfolio p {
+    font: 14px "DroidSerif-italic";
+    color: #737373;
+}
+
+.mainPortfolio>div {
+    margin: 20px 5px;
+}
+.infoText {
+    width: 310px;
+    margin: 0 34px;
+}
+.txt-al-r
+{
+    text-align: right;
+}
+.infoStory {
+    text-align: center
+}
+.infoStory div{
+    width: 184px;
+    height: 184px;
+    box-sizing: border-box;
+    border:6px solid #f1f1f1;
+    text-transform: uppercase;
+    background: #fed136;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: white;
+    font: 1.15em "Montserrat-Bold";
+    line-height: 25px;
+    padding: 32px;
+}
+.team {
+    height: auto;
+    background-image: url("img/bgTeam.png");
+}
+.mainTeam {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.mainTeam>div {
+    text-align: center;
+}
+.mainTeam>div {
+    width: 230px;
+    margin: 50px 25px;
+}
+
+.description {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.socialIcons {
+    display: inline-block;
+    background: url("img/socialButtons.png");
+    width: 41px;
+    height: 41px;
+}
+.kimberly .socialIcons:nth-of-type(2),
+.rico .socialIcons:nth-of-type(2){
+    background-position: -50px 0;
+    margin-left: 10px;
+}
+.kimberly .socialIcons:nth-of-type(3){
+    background-position: -99px 0;
+    margin-left: 10px;
+}
+.rico .socialIcons:nth-of-type(3){
+    background-position: 45px 0;
+    margin-left: 10px;
+}
+.uku .socialIcons:first-of-type {
+    background-position: -50px 0;
+}
+.uku .socialIcons:last-of-type {
+    background-position: -99px 0;
+    margin-left: 10px;
+}
+.mainTeam a:hover {
+    display: inline-block;
+    background: url("img/socialButtonsHover.png");
+    width: 41px;
+    height: 41px;
+}
+
+.innerLogos {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.logos{
+    width: 90%;
+    margin: 0 auto;
+}
+.innerLogos>a {
+    width: 20%;
+    margin: 2%;
+}
+innerLogos>a img {
+    hight: 30px;
+    width:150px;
+}
+
+
+.leftColumn, .rightColumn {
+    width: 460px;
+    height: 225px;
+    margin-top: 70px;
+}
+.leftColumn input, .rightColumn input  {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #ffffff;
+    width: 450px;
+}
+.leftColumn input {
+    height: 51px;
+}
+.rightColumn input {
+    height: 212px;
+}
+.leftColumn input:nth-of-type(2){
+    margin: 20px 0;
+}
+.sendMessage {
+    text-align: center;
+    margin-top: 30px;
+}
+.sendMessage input {
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-color: #FED136;
+    background-color: #FED136;
+    width: 240px;
+    height: 66px;
+    font: 18px "Montserrat-Bold";
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+.footer {
+    background-image: url("img/bgFooter.png");
+    box-sizing: border-box;
+}
+.innerFooter {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer p{
+    font: 14px "Montserrat-Regular";
+    line-height: 22px;
+}
+.allSocialIconsFooter {
+    margin-left: 90px;
+}
+.socialIconsFooter {
+    display: inline-block;
+    background: url("img/socialIconsFooter.png");
+    width: 40px;
+    height: 40px;
+}
+.socialIconsFooter:hover {
+    background: url("img/socialIconsHoverFooter.png");
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.socialIconsFooter:nth-of-type(2){
+    background-position: -50px 0;
+    margin-left: 10px;
+}
+.socialIconsFooter:nth-of-type(3){
+    background-position: -100px 0;
+    margin-left: 10px;
+}
+.socialIconsFooter:last-of-type {
+    background-position: 40px 0;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 993px) {
+    textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+.mainContact {
+    margin: 0 auto;
+}
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+.leftColumn, .rightColumn {
+    width: 46%;
+    height: auto;
+    margin: 2%;
+}
+.leftColumn input {
+    width: 100%;
+}
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 95%;
+}
+textarea {
+    overflow: auto;
+}
+}
+/*
+@media screen and (max-width: 992px) {
+    .leftColumn input {
+        width: 300px;
+    }
+}
+*/
+@media screen and (max-width: 992px){
+    .rico{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+    .mainTeam>div {
+        text-align: center;
+    }
+    .logos{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .innerLogos>a {
+        width: 20%;
+        margin: 2%;
+    }
+    .leftColumn, .rightColumn {
+        width: 46%;
+        height: auto;
+        margin: 2%;
+    }
+    .leftColumn input {
+        width: 100%;
+    }
+    textarea {
+        border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 95%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .innerHeader>nav>a{
+        display: block;
+    }
+    .innerHeader{
+        width: 100%;
+    }
+    .innerHeader>nav{
+        float: none;
+    }
+    .innerHeader>p{
+        font-size: 35px;
+        margin-top: 40px;
+    }
+    .innerHeader, .innerServices, .innerPotfolio, .innerInfo, .innerTeam, .innerContact, .innerFooter {
+        width: 100%;
+    }
+    .servicesTitle>h2, .portfolioTitle>h2, .infoTitle>h2, .teamTitle>h2, .contactTitle>h2{
+        font-size: 2.5em;
+        margin: 50px auto;
+        line-height: 50px;
+    }
+    .servicesTitle>p, .portfolioTitle>p, .infoTitle>p, .teamTitle>p, .contactTitle>p{
+        font-size: 1.5em;
+    }
+    .services{
+        height: auto;
+    }
+    .mainServices, .mainPortfolio, .mainInfo, .mainTeam, .mainContact{
+        margin: 0 auto;
+    }
+    .mainServices>div {
+        width: 30%;
+    }
+
+    .mainPortfolio div {
+        width: 29%;
+        margin: 2%;
+    }
+    .infoText {
+        display: block;
+        text-align: center;
+        float: left;
+        width: 60%;
+    }
+    /* img in the center
+
+    .infoJuly img, .infoJanuary img, .infoFebruary img, .infoDecember img {
+        background-image: url("img/infoJuly768.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: auto;
+        height: inherit;
+        margin: 0 auto;
+        float: none;
+    }*/
+
+    .infoJuly img, .infoJanuary img, .infoFebruary img, .infoDecember img {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .mainTeam>div {
+        width: 25%;
+        margin: 0 4%;
+    }
+    .uku h3, .rico h3{
+        margin-top: 40px;
+    }
+    .description {
+        text-align: center;
+        height: auto;
+        margin: 0 auto;
+    }
+    .innerLogos>a {
+        width: 20%;
+        margin: 2%;
+    }
+    .contactTitle>h2 {
+        padding-top: 30px;
+    }
+    .form {
+        margin-right: 1%;
+    }
+    .leftColumn, .rightColumn {
+        width: 46%;
+        height: auto;
+        margin: 2%;
+    }
+    .leftColumn input {
+        width: 100%;
+    }
+    .rightColumn {
+        float: left;
+    }
+    .innerFooter p {
+        margin-left: 2%;
+    }
+    .allSocialIconsFooter {
+        float: right;
+        margin: 0 4% 0 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 361px){
+    .innerHeader, .innerServices, .innerPotfolio, .innerInfo, .innerTeam, .innerLogos, .innerContact, .innerFooter{
+        width:100%;
+    }
+    h2{
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -o-hyphens: auto;
+        hyphens: auto;
+        font-size: 2.5em;
+        margin: 0;
+    }
+    .innerHeader>nav>a{
+        display: block;
+    }
+    .innerHeader{
+        width: 100%;
+    }
+    .innerHeader{
+        padding-top: 0;
+    }
+    .innerHeader>nav{
+        float: none;
+    }
+    .innerHeader>h1{
+        font-size: 3em;
+    }
+    .innerHeader>p{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .team{
+        height: auto;
+        margin-top: 50px;
+    }
+    .leftColumn, .rightColumn{
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        text-align: center;
+    }
+    textarea {
+        width:90%;
+        resize: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .sendMessage {
+        margin-top: 13px;
+    }
+    .leftColumn input, .rightColumn input{
+        width: 90%;
+    }
+    .mainTeam, .description{
+        width: 90%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .mainTeam>div{
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+    .uku {
+        margin-bottom: 0;
+    }
+    .mainInfo img{
+        display: none;
+    }
+    .mainInfo div{
+        float: none;
+        text-align: center;
+    }
+    .infoText{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .services{
+        height: inherit;
+    }
+    .innerServices{
+       width: 100%;
+    }
+    .innerServices>div {
+        display: block;
+    }
+    .servicesTitle{
+        display: block;
+    }
+    .servicesTitle>h2{
+        font-size: 2.5em;
+    }
+    .servicesTitle>p{
+        font-size: 1.5em;
+        margin-top: 12px;
+    }
+    .mainServices>div{
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .mainServices div:nth-of-type(2) {
+        margin: 0;
+    }
+
+    .innerFooter p {
+        float: none;
+        text-align: center;
+    }
+    .allSocialIconsFooter {
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+    .innerFooter {
+        margin: 0 0 10px;
+    }
+
+    .portfolio{
+        height: inherit;
+    }
+    .innerPortfolio{
+        width: 100%;
+    }
+    .innerPortfolio>div{
+        display: block;
+    }
+    .portfolioTitle{
+        display: block;
+    }
+    .portfolioTitle>h2{
+        font-size: 2.5em;
+    }
+    .portfolioTitle>p{
+        font-size: 1em;
+        margin-top: 40px;
+    }
+    .mainPortfolio div{
+        display: block;
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .smart, .treehouse{
+        margin: 77px 0 0;
+    }
+    .mainInfo>div {
+        margin-top: 50px;
+    }
+    .infoStory div{
+        width: 184px;
+        height: 184px;
+        box-sizing: border-box;
+        border:6px solid #f1f1f1;
+        text-transform: uppercase;
+        background: #fed136;
+        border-radius: 50%;
+        margin: 0 auto;
+        color: white;
+        font: 1.15em "Montserrat-Bold";
+        line-height: 25px;
+        padding: 32px;
+    }
+    .innerLogos>a {
+        width: 40%;
+        margin: 2%;
+    }
+
+}
+
+
+
+
+
