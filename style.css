@@ -114,6 +114,7 @@ a {
 
 a:active,
 a:hover {
+    text-decoration: underline;
     outline-width: 0;
 }
 
@@ -556,6 +557,13 @@ h1 {
     border-radius: 3px;
     font: 18px "Montserrat-Bold";
     color: #ffffff;
+    border: 2px solid transparent;
+}
+.tellMeMore a:hover {
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #fed136;
+    color: #fed136;;
 }
 h2 {
     font: 40px "Montserrat-Bold";
@@ -641,6 +649,18 @@ h2 {
     font: 1.15em "Montserrat-Bold";
     line-height: 25px;
     padding: 32px;
+}
+.infoStory div a {
+    color: white;
+}
+.infoStory div:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 6px solid #fed136;
+}
+.infoStory a:hover {
+    text-decoration: none;
+    color: #fed136;
 }
 .team {
     height: auto;
@@ -754,6 +774,13 @@ innerLogos>a img {
     font: 18px "Montserrat-Bold";
     color: #ffffff;
     margin-bottom: 2%;
+}
+.sendMessage input:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #fed136;
+    color: #fed136;;
 }
 .footer {
     background-image: url("img/bgFooter.png");
