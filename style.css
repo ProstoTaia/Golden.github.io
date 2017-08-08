@@ -474,8 +474,8 @@ template {
     src: url(font/Montserrat-Bold.otf); /* Путь к файлу со шрифтом */
 }
 @font-face {
-    font-family: "DroidSerif-italic"; /* Имя шрифта */
-    src: url(font/DroidSerif-italic.ttf) format("truetype"); /* Путь к файлу со шрифтом */
+    font-family: "DroidSerif-Italic"; /* Имя шрифта */
+    src: url(font/DroidSerif-Italic.ttf) format("truetype"); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: "RobotoSlab-Regular"; /* Имя шрифта */
@@ -537,7 +537,7 @@ nav a {
 .innerHeader p {
     text-align: center;
     margin-top: 185px;
-    font: 40px "DroidSerif-italic";
+    font: 40px "DroidSerif-Italic";
     color: #fff;
 }
 h1 {
@@ -581,7 +581,7 @@ h2 {
 .infoTitle p,
 .teamTitle p,
 .contactTitle p {
-    font: 16px "DroidSerif-italic";
+    font: 16px "DroidSerif-Italic";
 }
 .contactTitle {
     color: #fff;
@@ -618,7 +618,7 @@ h2 {
     height: auto;
 }
 .mainPotfolio p {
-    font: 14px "DroidSerif-italic";
+    font: 14px "DroidSerif-Italic";
     color: #737373;
 }
 
